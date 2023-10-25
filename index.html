@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Geladinhos da Escola</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #c74d7c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            border: 2px solid #cb9292;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .seller {
+            font-weight: bold;
+        }
+
+        .geladinho {
+            background-color: #cb9292;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .geladinho img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #173dc6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #b75974;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Geladinhos da Escola</h1>
+    </header>
+
+    <div class="container">
+        <div class="geladinho">
+            <img src="geladinho-de-leite-ninho-morango.webp" alt="Geladinho 1">
+            <h2>Sabor Morango</h2>
+            <p><span class="seller">Vendedora: Maria</span><br>Preço: R$ 5,00</p>
+            <button class="button" onclick="makePurchase('Sabor Morango', 'Maria', 5.00)">Comprar</button>
+        </div>
+
+        <div class="geladinho">
+            <img src="geladinho-pacoca-ct-1-910x512.jpg" alt="Geladinho 2">
+            <h2>Sabor Limão</h2>
+            <p><span class="seller">Vendedora: Laura e Endilly</span><br>Preço: R$ 4,00</p>
+            <button class="button" onclick="makePurchase('Sabor Limão', 'Laura e Endilly', 4.00)">Comprar</button>
+        </div>
+
+        <div class="geladinho">
+            <img src="geladinho-gourmet-de-chocolate.jpg" alt="Geladinho 3">
+            <h2>Sabor Uva</h2>
+            <p><span class="seller">Vendedora: Jaqueline</span><br>Preço: R$ 4.00</p>
+            <button class="button" onclick="makePurchase('Sabor Uva', 'Jaqueline', 4.00)">Comprar</button>
+        </div>
+
+        <!-- Embed a YouTube video -->
+        <div class="geladinho">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Loja de Geladinhos da Escola
+    </footer>
+
+    <script>
+        function makePurchase(sabor, vendedora, preco) {
+            alert(`Pedido feito: ${sabor} vendido por ${vendedora} por R$ ${preco}`);
+        }
+    </script>
+</body>
+</html>
